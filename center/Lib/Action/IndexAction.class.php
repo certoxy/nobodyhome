@@ -1,5 +1,5 @@
 <?php
-// 本类由系统自动生成，仅供测试用途
+// 鏈被鐢辩郴缁熻嚜鍔ㄧ敓鎴愶紝浠呬緵娴嬭瘯鐢ㄩ��
 class IndexAction extends Action 
 {
     public function Index()
@@ -10,8 +10,18 @@ class IndexAction extends Action
     	
     	
 	}
-	public function Logon()
-	{}
+	public function Logon($TargetURL = null)
+	{
+		$User = new UserModel();
+		$User->create();
+		if($User)
+		{
+			
+		}
+	}
+	protected function Dologon()
+	{
+	}
 	public function Register()
 	{}
 	public function ChangePwd()
